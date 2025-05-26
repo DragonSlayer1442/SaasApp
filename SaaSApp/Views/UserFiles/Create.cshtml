@@ -1,0 +1,19 @@
+﻿<h1>Upload File</h1>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group mb-3">
+        <input type="file" name="uploadedFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Upload</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

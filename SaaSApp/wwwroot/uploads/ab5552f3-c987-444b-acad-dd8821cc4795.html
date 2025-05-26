@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Posts Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Post ID</th>
+        <th>User ID</th>
+        <th>Image Path</th>
+        <th>Caption</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>101</td>
+        <td>images/photo1.jpg</td>
+        <td>A beautiful sunset</td>
+        <td>2025-01-25 14:30</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>102</td>
+        <td>images/photo2.jpg</td>
+        <td>Having a great time at the beach</td>
+        <td>2025-01-26 10:15</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>103</td>
+        <td>images/photo3.jpg</td>
+        <td>Delicious homemade pasta</td>
+        <td>2025-01-26 18:45</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
